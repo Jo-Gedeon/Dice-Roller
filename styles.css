@@ -1,0 +1,36 @@
+#dieContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dieButton{
+    font-size: 3.5vw;
+    background-color:maroon;
+    color: rgb(189, 189, 56);
+    border-color:saddlebrown;
+    box-shadow: seashell;
+    margin:0.5vw;
+    border-radius: 25%;
+
+}
+
+#mainTitle{
+    text-align: center;
+    width: 40%;
+    margin:auto;
+    background-color: brown;
+    font-size: 5vw;
+    border-radius: 12px;
+    
+}
+
+body{
+    background-color: rgb(33, 33, 33);
+}
+
+#outputText{
+    color: aliceblue;
+}
+
+
