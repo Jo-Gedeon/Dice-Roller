@@ -17,20 +17,48 @@
 
 #mainTitle{
     text-align: center;
-    width: 40%;
-    margin:auto;
-    background-color: brown;
+    width: 100%;
+    margin-top: auto;
+    background-color:#401F3E;
     font-size: 5vw;
-    border-radius: 12px;
+    
     
 }
 
+.felipa-regular {
+  font-family: "Felipa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body{
-    background-color: rgb(33, 33, 33);
+    background-color: #453F78;
 }
 
 #outputText{
     color: aliceblue;
 }
+
+#log{
+    width: 25%;
+    height: 400px;
+    background-color: #FAF2A1;
+    overflow-y: auto;
+    border-color: #3F2E56;
+    
+    
+}
+
+#main-container{
+    display: flex;
+}
+
+#main-container div{
+    margin: auto;
+    padding: 1rem;
+}
+
+
 
 

@@ -1,6 +1,6 @@
 
-let rollResult = 0;
 const output = document.getElementById("roll")
+const log = document.getElementById("previous-rolls") // our ul of rolls
 
 // Rolling Fucntions
 function roll(size){
@@ -9,36 +9,35 @@ function roll(size){
 }
 
 function d4(){
-    rollResult = roll(4);
-    update();
-
+    update(roll(4));
 }
-
 function d6(){
-    rollResult = roll(6);
-    update();
+   update(roll(6));
 }
 function d8(){
-    rollResult = roll(8);
-    update();
+    update(roll(8));
 }
 function d10(){
-   rollResult = Math.floor(Math.random() * 11);
-    update();
+   let rollResult = Math.floor(Math.random() * 11);
+    update(rollResult);
 }
 function d12(){
-    rollResult = roll(12);
-    update();
+    update(roll(12));
 }
 function d20(){
-    rollResult = roll(20);
-    update();
+   update(roll(20));
 }
 
-function update(){
-    output.innerHTML = rollResult;
+////////////////////////////////////////////
+
+// HTML Altering functions 
+function update(result){
+    output.innerHTML = result;
+    addToLog(result)
 }
 
-console.log(roll(6))
-
-
+function addToLog(result){
+    const li = document.createElement("li")
+    li.textContent = result
+    log.appendChild(li)
+}
